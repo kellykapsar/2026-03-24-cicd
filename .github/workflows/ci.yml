@@ -14,8 +14,8 @@ jobs:
       - name: Print Hello World
         id: hello-step
         run: | 
-        echo "Hello World" 
-        echo "message='My message'" >> $GITHUB_OUTPUT
+          echo "Hello World" 
+          echo "message='My message'" >> $GITHUB_OUTPUT
       - name: Second step 
         run: | 
           echo "Second"
