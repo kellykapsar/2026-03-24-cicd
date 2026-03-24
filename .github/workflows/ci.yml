@@ -27,8 +27,10 @@ jobs:
     name: Linting 
     runs-on: ubuntu-latest
     steps: 
+      - name: Check out repo
+        uses: actions/checkout@v6
       - name: Use ruff to lint code
-        run: astral-sh/ruff-action
+        uses: astral-sh/ruff-action@v3
 
   test: 
     name: Test the Python package
