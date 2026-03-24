@@ -3,6 +3,8 @@ on:
 
 jobs:
   hello: 
+    name: My Hello job
     runs-on: ubuntu-latest
     steps: 
-      - run: echo "Hello World"
+      - name: Print Hello World
+        run: echo "Hello World"
