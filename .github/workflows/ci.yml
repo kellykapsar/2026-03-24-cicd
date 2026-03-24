@@ -1,5 +1,10 @@
+name: My CI workflow
+
 on: 
   push: 
+      branches: [main]
+  pull_request: 
+  workflow_dispatch: 
 
 jobs:
   hello: 
