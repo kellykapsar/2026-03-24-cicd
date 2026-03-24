@@ -8,3 +8,12 @@ jobs:
     steps: 
       - name: Print Hello World
         run: echo "Hello World"
+      - name: Second step 
+        run: echo "Second"
+
+  goodbye: 
+    name: My Goodbye job
+    needs: hello
+    runs-on: windows-latest
+    steps: 
+      - run: echo "Goodbye"
